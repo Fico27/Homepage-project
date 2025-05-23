@@ -66,6 +66,22 @@
   z-index: 1;
 }
 
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+}
+
 /* icon sources
 
 LinkedIN
