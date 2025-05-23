@@ -1,39 +1,82 @@
-main,
-body {
-  background-color: white;
-  width: 100%;
+* {
   margin: 0;
   padding: 0;
-}
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 .about-me {
-  height: 100vh;
   width: 100%;
-  background: linear-gradient(180deg, #00aeef 50%, transparent 50%);
-  background-color: #00aeef;
+  min-height: 600px;
+  background: #00aaff;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-me::after {
+  content: "";
   position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  clip-path: polygon(100% 50%, 100% 100%, 0 100%);
+}
+
+.aboutme-container {
   display: flex;
-  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
   justify-content: center;
-  overflow: visible;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 .about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: white;
-  height: 400px;
-  width: 700px;
+  height: 450px;
+  width: 600px;
+  border: 2px solid black;
   padding: 2rem;
-  position: relative;
-  z-index: 1;
 }
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: end;
+}
+.logo {
+  padding-left: 25px;
+  width: 50px;
+}
+
 #pp {
   height: 500px;
   width: auto;
   object-fit: contain;
   z-index: 1;
 }
+
+/* icon sources
+
+LinkedIN
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+
+Git:
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+
+
+twitter::after
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
+           */
