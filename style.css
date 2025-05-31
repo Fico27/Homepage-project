@@ -160,6 +160,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-shrink: 1;
 }
 
 footer img {
@@ -212,6 +213,64 @@ footer img {
   height: 2.5rem;
   margin: 0 1rem;
 }
+
+#ppOverLap {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 1206px) {
+  #pp {
+    display: none;
+  }
+  #ppOverLap {
+    display: block;
+    min-width: 15rem;
+    max-width: 20vw;
+    float: left;
+    margin: 2rem 2rem;
+    transform: scale(1.5) translateY(1rem);
+    transform-origin: bottom right;
+  }
+  .project-container {
+    max-width: 80%;
+    min-width: 80%;
+  }
+  .about-title {
+    text-align: end;
+  }
+  .logo-container {
+    display: none;
+  }
+
+  .about-description {
+    border: none;
+    padding: 3rem;
+  }
+
+  .about-tablet {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .footer-image {
+    margin-left: 2rem;
+    width: 50%;
+  }
+
+  .contact {
+    margin-right: 2rem;
+  }
+
+  .project {
+    width: 250px;
+    height: 300px;
+  }
+
+  .contact h3 {
+    text-align: center;
+  }
+}
+
 /* icon sources
 
 LinkedIN
